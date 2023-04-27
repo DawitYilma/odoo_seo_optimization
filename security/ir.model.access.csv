@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_google_analytics_report,google.analytics.report,model_google_analytics_report,,1,1,1,1
+access_google_analytics_report_line,google.analytics.report.line,model_google_analytics_report_line,,1,1,1,1
+access_google_analytics_auth,google.analytics.auth,model_google_analytics_auth,,1,1,1,1
+access_google_analytics_report_line,google.analytics.report.line,model_google_analytics_report_line,,1,1,1,1
+
+

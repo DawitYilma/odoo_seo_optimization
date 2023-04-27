@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "odoo-analytics-907888",
+  "private_key_id": "adfdjfakj3894u293uaifajklj93893jkd",
+  "private_key": "-----BEGIN PRIVATE KEY-----\ndjkfjas;kldfja;ldjkfa;lsdjkfa;lskdjsljfoeiwasdklfjaeifskldfjaiefhasdklfjadk\n-----END PRIVATE KEY-----\n",
+  "client_email": "test.com",
+  "client_id": "782934829348234",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/odoo-912%40odoo-analytics-354208.iam.gserviceaccountaccount.com"
+}

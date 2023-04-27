@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo><data>
+
+    <record id="google_analytics_report_form" model="ir.ui.view">
+        <field name="name">google.analytics.report.view.form</field>
+        <field name="model">google.analytics.report</field>
+        <field name="arch" type="xml">
+            <form string="Google Analytics Report">
+                <sheet>
+                    <group id="general_info">
+                        <group>
+                            <field name="name"/>
+                            <field name="key_file_location"/>
+                        </group>
+                        <group>
+                            <field name="country"/>
+                            <field name="view_id"/>
+                        </group>
+                    </group>
+                    <notebook colspan="4">
+                        <page string="Google Analytics Record" name="students">
+                            <field name="google_analytics_report_ids" nolabel="1" colspan="4">
+                                <tree string="Website Visitors History" create="0" edit="0" sample="1">
+                                    <field name="website"/>
+                                    <field name="session_id"/>
+                                    <field name="activity_time"/>
+                                    <field name="device_category"/>
+                                    <field name="platform"/>
+                                    <field name="source"/>
+                                    <field name="medium"/>
+                                    <field name="campaign"/>
+                                    <field name="landing_page_path"/>
+                                    <field name="page_path"/>
+                                    <field name="page_title"/>
+                                </tree>
+                                <form string="Website Visitors History">
+                                    <group col="4" colspan="4">
+                                        <field name="website"/>
+                                        <field name="session_id"/>
+                                        <field name="activity_time"/>
+                                        <field name="device_category"/>
+                                        <field name="platform"/>
+                                        <field name="source"/>
+                                        <field name="medium"/>
+                                        <field name="campaign"/>
+                                        <field name="landing_page_path"/>
+                                        <field name="page_path"/>
+                                        <field name="page_title"/>
+                                    </group>
+                                </form>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="google_analytics_report_view_tree" model="ir.ui.view">
+        <field name="name">google.analytics.report.view.tree</field>
+        <field name="model">google.analytics.report</field>
+        <field name="arch" type="xml">
+            <tree string="Google Analytics Report">
+                <field name="name"/>
+                <field name="country"/>
+            </tree>
+        </field>
+    </record>
+
+
+    <record id="google_analytics_report_line_view_tree" model="ir.ui.view">
+        <field name="name">google.analytics.report.line.view.tree</field>
+        <field name="model">google.analytics.report.line</field>
+        <field name="arch" type="xml">
+            <tree string="Google Analytics Report Line">
+                <field name="name"/>
+                <field name="website"/>
+                <field name="session_id"/>
+                <field name="activity_time"/>
+                <field name="device_category"/>
+                <field name="platform"/>
+                <field name="source"/>
+                <field name="medium"/>
+                <field name="campaign"/>
+                <field name="landing_page_path"/>
+                <field name="page_path"/>
+                <field name="page_title"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="google_analytics_report_view_search" model="ir.ui.view">
+        <field name="name">google.analytics.report.view.search</field>
+        <field name="model">google.analytics.report</field>
+        <field name="arch" type="xml">
+            <search string="Search Google Analytics Report">
+                <field name="name"/>
+                <field name="key_file_location"/>
+                <field name="view_id"/>
+                <field name="country"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="google_analytics_report_action" model="ir.actions.act_window">
+        <field name="name">Google Analytics Report</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">google.analytics.report</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context"></field>
+        <field name="help" type="html">
+          <p class="o_view_nocontent_smiling_face">
+            No Google Analytics Report yet!
+          </p><p>
+            Wait for visitors to come to your website to see their history and engage with them.
+          </p>
+        </field>
+    </record>
+
+
+    <record id="google_analytics_report_line_action" model="ir.actions.act_window">
+        <field name="name">Google Analytics Report Line</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">google.analytics.report.line</field>
+        <field name="view_mode">tree</field>
+        <field name="context"></field>
+        <field name="help" type="html">
+          <p class="o_view_nocontent_smiling_face">
+            No Google Analytics Report yet!
+          </p><p>
+            Wait for visitors to come to your website to see their history and engage with them.
+          </p>
+        </field>
+    </record>
+</data>
+</odoo>
